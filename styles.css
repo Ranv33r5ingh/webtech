@@ -1,0 +1,133 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-block-end: 0.3rem;
+}
+
+.text {
+  text-shadow: 3px 0 #DA0463;
+  color: #DBEDF3;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #DBEDF3;
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 2rem;
+  font-family: cursive;
+  margin-block-start: 0.2rem;
+  margin-block-end: 0.2rem;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  position: relative;
+  bottom: 0%;
+}
+
+.w {
+background-image:url("images/tom1.png");
+}
+
+.a {
+background-image:url("images/tom2.png");
+}
+
+.s {
+background-image:url("images/tom3.png");
+}
+
+.d {
+background-image:url("images/tom4.png");
+}
+
+.j {
+background-image:url("images/snare.png");
+}
+
+.k {
+background-image:url("images/kick.png");
+}
+
+.l {
+background-image:url("images/crash.png");
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+.logbook {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background-color: #283149;
+  border: 1px solid #DA0463;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 200px;
+  box-shadow: 0px 0px 5px #404B69;
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden; 
+  font-size: 1rem;
+  color: #DBEDF3;
+  font-family: 'Arvo', cursive;
+  text-shadow: 3px 0 #DA0463;
+}
+
+.logbook.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.logbook.fade-out {
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

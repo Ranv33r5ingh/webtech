@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 class="text" id="title">Drum 🥁 Kit</h1>
+
+  <h6 class="text">Web Technologies Project</h6>
+  <p class="text">Play something and record your log!</p>
+
+  <div class="set" ng-app="keypressApp" ng-controller="KeypressController">
+
+    <div class="logbook" ng-class="{ 'show': showLogbook, 'fade-out': !showLogbook }"> 
+      <div>{{ logText }}</div>
+    </div>
+
+    <button class="w drum" ng-click="logButtonClick('w')">w</button>
+    <button class="a drum" ng-click="logButtonClick('a')">a</button>
+    <button class="s drum" ng-click="logButtonClick('s')">s</button>
+    <button class="d drum" ng-click="logButtonClick('d')">d</button>
+    <button class="j drum" ng-click="logButtonClick('j')">j</button>
+    <button class="k drum" ng-click="logButtonClick('k')">k</button>
+    <button class="l drum" ng-click="logButtonClick('l')">l</button>
+    
+  </div>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="index.js" type="text/javascript"></script>
+
+  </body>
+ 
+  <footer>
+    <p>Made by Ranveer Singh FSAI B3 B.Tech CSE Sem 4</p>
+    <p>Sap ID: 500109515 Roll No: R2142221247 </p>
+  </footer>
+
+</html>
